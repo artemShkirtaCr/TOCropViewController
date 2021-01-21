@@ -1,7 +1,7 @@
 //
 //  TOCropView.h
 //
-//  Copyright 2015-2020 Timothy Oliver. All rights reserved.
+//  Copyright 2015-2018 Timothy Oliver. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to
@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) BOOL canBeReset;
 
-/** 
+/**
  The frame of the cropping box in the coordinate space of the crop view
  */
 @property (nonatomic, readonly) CGRect cropBoxFrame;
@@ -135,7 +135,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger angle;
 
 /**
- Hide all of the crop elements for transition animations 
+ Hide all of the crop elements for transition animations
  */
 @property (nonatomic, assign) BOOL croppingViewsHidden;
 
@@ -223,7 +223,7 @@ The minimum croping aspect ratio. If set, user is prevented from setting croppin
 - (void)setSimpleRenderMode:(BOOL)simpleMode animated:(BOOL)animated;
 
 /**
- When performing a screen rotation that will change the size of the scroll view, this takes 
+ When performing a screen rotation that will change the size of the scroll view, this takes
  a snapshot of all of the scroll view data before it gets manipulated by iOS.
  Please call this in your view controller, before the rotation animation block is committed.
  */
